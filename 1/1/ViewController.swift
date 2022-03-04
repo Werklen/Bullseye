@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     var targetValue = 0
     var score = 0
     var round = 0
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         currentValue = lroundf(slider.value)
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         } else if difference < 5 {
             title = "You almost had it!"
             if difference == 1 {
-                points += 50 
+                points += 50
             }
         } else if difference < 10 {
             title = "Pretty good!"
@@ -50,13 +50,30 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sliderMoved(_ slider: UISlider) {
-    currentValue = lroundf(slider.value)
+        currentValue = lroundf(slider.value)
+    }
+    
+    func addHighScore(_ score:Int) {
+    // 1
+    guard score > 0 else {
+    return;
+    }
+    // 2
+    let highscore = HighScoreItem()
+    highscore.score = score
+    highscore.name = "Unknown"
+    // 3
+    var highScores = PersistencyHelper.loadHighScores()
+    highScores.append(highscore)
+    highScores.sort { $0.score > $1.score }
+    PersistencyHelper.saveHighScores(highScores)
     }
     
     @IBAction func startNewGame() {
-    score = 0
-    round = 0
-    startNewRound()
+        addHighScore(score)
+        score = 0
+        round = 0
+        startNewRound()
     }
     
     func startNewRound() {
