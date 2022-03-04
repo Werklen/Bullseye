@@ -17,6 +17,7 @@
 		2C511905279331C300FC9E9F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C511904279331C300FC9E9F /* AboutViewController.swift */; };
 		2C5BE9BD27D1A125008F3815 /* HighScoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BE9BC27D1A125008F3815 /* HighScoreItem.swift */; };
 		2C5BE9BF27D1AD6D008F3815 /* PersistencyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BE9BE27D1AD6D008F3815 /* PersistencyHelper.swift */; };
+		2CBFA59A27D22EB5009087F5 /* EditHighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBFA59927D22EB5009087F5 /* EditHighScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2C511904279331C300FC9E9F /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		2C5BE9BC27D1A125008F3815 /* HighScoreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreItem.swift; sourceTree = "<group>"; };
 		2C5BE9BE27D1AD6D008F3815 /* PersistencyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyHelper.swift; sourceTree = "<group>"; };
+		2CBFA59927D22EB5009087F5 /* EditHighScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHighScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,15 +68,16 @@
 			children = (
 				2C324D712791A40700A29DCF /* AppDelegate.swift */,
 				2C324D732791A40700A29DCF /* SceneDelegate.swift */,
-				2C1610D227B986E9006717CB /* HighScoresViewController.swift */,
 				2C324D752791A40700A29DCF /* ViewController.swift */,
-				2C324D772791A40700A29DCF /* Main.storyboard */,
 				2C511904279331C300FC9E9F /* AboutViewController.swift */,
+				2C1610D227B986E9006717CB /* HighScoresViewController.swift */,
+				2CBFA59927D22EB5009087F5 /* EditHighScoreViewController.swift */,
+				2C5BE9BC27D1A125008F3815 /* HighScoreItem.swift */,
+				2C5BE9BE27D1AD6D008F3815 /* PersistencyHelper.swift */,
+				2C324D772791A40700A29DCF /* Main.storyboard */,
 				2C324D7A2791A40800A29DCF /* Assets.xcassets */,
 				2C324D7C2791A40800A29DCF /* LaunchScreen.storyboard */,
 				2C324D7F2791A40800A29DCF /* Info.plist */,
-				2C5BE9BC27D1A125008F3815 /* HighScoreItem.swift */,
-				2C5BE9BE27D1AD6D008F3815 /* PersistencyHelper.swift */,
 			);
 			path = 1;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				2C1610D327B986E9006717CB /* HighScoresViewController.swift in Sources */,
 				2C5BE9BD27D1A125008F3815 /* HighScoreItem.swift in Sources */,
+				2CBFA59A27D22EB5009087F5 /* EditHighScoreViewController.swift in Sources */,
 				2C5BE9BF27D1AD6D008F3815 /* PersistencyHelper.swift in Sources */,
 				2C324D762791A40700A29DCF /* ViewController.swift in Sources */,
 				2C324D722791A40700A29DCF /* AppDelegate.swift in Sources */,
